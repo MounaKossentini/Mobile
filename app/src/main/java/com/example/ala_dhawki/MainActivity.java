@@ -16,16 +16,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        stickerview = (ImageView) findViewById(R.id.imageView6);
 
 
-        stickerview.setOnClickListener(new View.OnClickListener() {
+        //stickerview = (ImageView) findViewById(R.id.imageView6);
+
+
+       /* stickerview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SigninActivity2.class);
                 startActivity(intent);
             }
-        });
+        });*/
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, SigninActivity2.class);
+                startActivity(intent);
+            }
+        },2500);
 
     }
     }
