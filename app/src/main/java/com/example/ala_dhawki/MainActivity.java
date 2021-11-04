@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.orderf);
+        setContentView(R.layout.activity_main);
 
 
         //stickerview = (ImageView) findViewById(R.id.imageView6);
