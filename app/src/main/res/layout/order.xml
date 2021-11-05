@@ -7,22 +7,6 @@
     android:background="@color/white">
 
     <ImageView
-        android:id="@+id/imageView60"
-        android:layout_width="412dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:scaleType="fitEnd"
-        android:scaleX="80"
-        android:scaleY="1.44"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/rectangle_9" />
-
-    <ImageView
         android:id="@+id/imageView56"
         android:layout_width="97dp"
         android:layout_height="88dp"
@@ -340,79 +324,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.787"
         app:srcCompat="@drawable/plan_de_travail__40" />
-
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="412dp"
-        android:layout_height="wrap_content"
-        android:scaleType="fitEnd"
-        android:scaleX="80"
-        android:scaleY="1.44"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/rectangle_9" />
-
-    <ImageView
-        android:id="@+id/imageView33"
-        android:layout_width="65dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
-        app:srcCompat="@drawable/groupe_1911" />
-
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="16dp"
-        android:layout_height="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977"
-        app:srcCompat="@drawable/groupe_225" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="17dp"
-        android:layout_height="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.728"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977"
-        app:srcCompat="@drawable/groupe_227" />
-
-    <ImageView
-        android:id="@+id/imageView37"
-        android:layout_width="19dp"
-        android:layout_height="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977"
-        app:srcCompat="@drawable/trac__75" />
-
-    <ImageView
-        android:id="@+id/imageView35"
-        android:layout_width="13dp"
-        android:layout_height="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974"
-        app:srcCompat="@drawable/trac__76" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

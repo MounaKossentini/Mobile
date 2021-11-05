@@ -30,6 +30,10 @@ public class BestSellersActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame, new HomeActivity())
+                .commit();
         home.setOnClickListener(view -> {
 
             getSupportFragmentManager()
