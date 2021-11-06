@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/checkout.xml" value="0.1" />
-        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/detail.xml" value="0.1" />
+        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/checkout.xml" value="0.264" />
+        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/detail.xml" value="0.4" />
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/home.xml" value="0.264" />
+        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/home_page.xml" value="0.24592391304347827" />
+        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/menu.xml" value="0.24592391304347827" />
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/order.xml" value="0.25416666666666665" />
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/profile.xml" value="0.25416666666666665" />
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/signin.xml" value="0.25416666666666665" />
+        <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/signup.xml" value="0.2" />
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/stichers_page.xml" value="0.25416666666666665" />
         <entry key="..\:/5emeSAE/Android/ProjetGit/Mobile/app/src/main/res/layout/tet.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/khaou/AndroidStudioProjects/ALA_Dhawki/app/src/main/res/layout/activity_home.xml" value="0.25052083333333336" />

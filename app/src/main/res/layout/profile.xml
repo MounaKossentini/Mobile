@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/plan_de_travail__43" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log out"
@@ -140,7 +140,7 @@
         app:srcCompat="@drawable/plan_de_travail__46" />
 
     <ImageView
-        android:id="@+id/imageView29"
+        android:id="@+id/picture"
         android:layout_width="79dp"
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -152,7 +152,7 @@
         app:srcCompat="@drawable/plan_de_travail__25" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hi, Alice!"
