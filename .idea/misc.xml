@@ -27,12 +27,18 @@
         <entry key="..\:/Users/khaou/AndroidStudioProjects/ALA_Dhawki/app/src/main/res/layout/stickers_page.xml" value="0.23072916666666668" />
         <entry key="..\:/Users/khaou/AndroidStudioProjects/ALA_Dhawki/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/khaou/AndroidStudioProjects/ALA_Dhawki/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
-        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/item.xml" value="0.1" />
-        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/round.xml" value="0.2703125" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/account.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/circlebtn.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/favoris.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/item.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/round.xml" value="0.1" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/activity_favoris.xml" value="0.2203125" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/button.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/checkou.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/checkout.xml" value="0.264" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/detail.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/favoris.xml" value="0.176" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/home.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/home_page.xml" value="0.16394927536231885" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/menu.xml" value="0.15307971014492755" />

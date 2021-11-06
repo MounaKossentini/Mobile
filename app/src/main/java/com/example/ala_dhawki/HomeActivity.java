@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.example.ala_dhawki.Model.FavorisActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends  AppCompatActivity  {
@@ -55,7 +56,7 @@ public class HomeActivity extends  AppCompatActivity  {
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(HomeActivity.this, CategoryActivity.class));
+                        startActivity(new Intent(HomeActivity.this, FavorisActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
