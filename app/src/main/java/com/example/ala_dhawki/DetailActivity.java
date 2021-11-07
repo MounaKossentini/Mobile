@@ -37,12 +37,12 @@ public class DetailActivity extends AppCompatActivity {
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(DetailActivity.this, HomeActivity.class));
+                        startActivity(new Intent(DetailActivity.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(DetailActivity.this, CategoryActivity.class));
+                        startActivity(new Intent(DetailActivity.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

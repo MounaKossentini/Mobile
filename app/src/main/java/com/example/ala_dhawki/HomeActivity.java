@@ -1,20 +1,14 @@
 package com.example.ala_dhawki;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.example.ala_dhawki.Model.FavorisActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends  AppCompatActivity  {
@@ -51,12 +45,12 @@ public class HomeActivity extends  AppCompatActivity  {
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(HomeActivity.this, HomeActivity.class));
+                        startActivity(new Intent(HomeActivity.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(HomeActivity.this, FavorisActivity.class));
+                        startActivity(new Intent(HomeActivity.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

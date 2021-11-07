@@ -1,16 +1,11 @@
 package com.example.ala_dhawki;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -29,12 +24,12 @@ public class OrderActivity extends AppCompatActivity {
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(OrderActivity.this, HomeActivity.class));
+                        startActivity(new Intent(OrderActivity.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(OrderActivity.this, CategoryActivity.class));
+                        startActivity(new Intent(OrderActivity.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

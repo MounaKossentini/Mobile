@@ -6,57 +6,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class CategoryActivity extends AppCompatActivity {
-
+public class FaActivity extends AppCompatActivity {
     BottomNavigationView navigationView;
-    private ImageView stickers;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_page);
+        setContentView(R.layout.favoris);
 
         navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setSelectedItemId(R.id.favoris);
-
-        stickers = findViewById(R.id.imageView27);
-
-
-        stickers.setOnClickListener(view -> {
-            Intent intent = new Intent(CategoryActivity.this, StickerActivity.class);
-            startActivity(intent);
-        });
-
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(CategoryActivity.this, BestSellersActivity.class));
+                        startActivity(new Intent(FaActivity.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(CategoryActivity.this, FaActivity.class));
-                        overridePendingTransition(0,0);
-                        return true;
 
+                              return true;
 
                     case R.id.order:
-                        startActivity(new Intent(CategoryActivity.this, OrderActivity.class));
+
+                        startActivity(new Intent(FaActivity.this, OrderActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
                     case R.id.profile:
-                        startActivity(new Intent(CategoryActivity.this, ProfileActivity.class));
+                        startActivity(new Intent(FaActivity.this, ProfileActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
@@ -68,5 +51,4 @@ public class CategoryActivity extends AppCompatActivity {
             }
         });
     }
-
 }

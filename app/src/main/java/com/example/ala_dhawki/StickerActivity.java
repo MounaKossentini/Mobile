@@ -46,12 +46,12 @@ public class StickerActivity extends AppCompatActivity {
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(StickerActivity.this, HomeActivity.class));
+                        startActivity(new Intent(StickerActivity.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(StickerActivity.this, CategoryActivity.class));
+                        startActivity(new Intent(StickerActivity.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

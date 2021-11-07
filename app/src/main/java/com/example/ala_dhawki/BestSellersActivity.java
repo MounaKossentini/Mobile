@@ -64,7 +64,7 @@ public class BestSellersActivity extends AppCompatActivity {
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(BestSellersActivity.this, CategoryActivity.class));
+                        startActivity(new Intent(BestSellersActivity.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

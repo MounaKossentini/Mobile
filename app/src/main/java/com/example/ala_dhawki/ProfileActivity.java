@@ -1,20 +1,14 @@
 package com.example.ala_dhawki;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.net.Uri;
-import android.widget.EditText;
 import android.content.Intent;
 import android.widget.ImageView;
 import android.widget.Toast;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.content.SharedPreferences;
 import android.widget.TextView;
 
@@ -84,12 +78,12 @@ public class ProfileActivity extends AppCompatActivity {
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(ProfileActivity.this, HomeActivity.class));
+                        startActivity(new Intent(ProfileActivity.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(ProfileActivity.this, CategoryActivity.class));
+                        startActivity(new Intent(ProfileActivity.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
