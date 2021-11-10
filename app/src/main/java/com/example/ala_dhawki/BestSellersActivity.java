@@ -37,12 +37,18 @@ public class BestSellersActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
-        p.add(new Product(1,"30","Stickers",R.drawable.plan_de_travail__38,"","Ceries"));
-        p.add(new Product(2,"35","Bullet",R.drawable.plan_de_travail__25,"",""));
-        p.add(new Product(3,"20","weeding",R.drawable.plan_de_travail__22,"",""));
-        p.add(new Product(4,"10","Stickers",R.drawable.plan_de_travail__23,"",""));
-        p.add(new Product(5,"20","weeding",R.drawable.plan_de_travail__22,"",""));
-        p.add(new Product(6,"10","Stickers",R.drawable.plan_de_travail__23,"",""));
+        p.add(new Product(1,"20Dt","Stickers",R.drawable.plan_de_travail__35,"","Girls Stickers"));
+        p.add(new Product(2,"20Dt","Stickers",R.drawable.plan_de_travail__34,"","Flower Stickers"));
+        p.add(new Product(3,"33Dt","Bullet",R.drawable.plan_de_travail__28,"Cerices Jornal","Cerices Jornal"));
+        p.add(new Product(4,"1Dt","weeding",R.drawable.plan_de_travail__36,"","Minimalist Invitation"));
+        p.add(new Product(5,"38Dt","Bullet",R.drawable.plan_de_travail__33,"","Rose Jornal"));
+        p.add(new Product(6,"10Dt","weeding",R.drawable.plan_de_travail__27,"","Boheme Invitation"));
+        p.add(new Product(1,"20Dt","Stickers",R.drawable.plan_de_travail__35,"","Girls Stickers"));
+        p.add(new Product(2,"20Dt","Stickers",R.drawable.plan_de_travail__34,"","Flower Stickers"));
+        p.add(new Product(3,"33Dt","Bullet",R.drawable.plan_de_travail__28,"Cerices Jornal","Cerices Jornal"));
+        p.add(new Product(4,"1Dt","weeding",R.drawable.plan_de_travail__36,"","Minimalist Invitation"));
+        p.add(new Product(5,"38Dt","Bullet",R.drawable.plan_de_travail__33,"","Rose Jornal"));
+        p.add(new Product(6,"10Dt","weeding",R.drawable.plan_de_travail__27,"","Boheme Invitation"));
 
         RecyclerView =  findViewById(R.id.RecycleView);
         RecyclerView.setLayoutManager(new GridLayoutManager(this,2));

@@ -3,6 +3,7 @@ package com.example.ala_dhawki;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.content.Intent;
 import android.widget.ImageView;
@@ -12,7 +13,10 @@ import android.view.MenuItem;
 import android.content.SharedPreferences;
 import android.widget.TextView;
 
+import com.example.ala_dhawki.Model.DataConverter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.nio.charset.StandardCharsets;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -44,8 +48,9 @@ public class ProfileActivity extends AppCompatActivity {
         name.setText(sName);
 
 
-        sPicture = sp.getString("Picture","");
-        picture.setImageURI(Uri.parse(sp.getString(sPicture,"")));
+        sPicture =  sp.getString("Picture","");
+        //sPicture.getBytes(StandardCharsets.UTF_8).toString();
+         picture.setImageURI(Uri.parse(sp.getString(sPicture,"")));
 
 
 

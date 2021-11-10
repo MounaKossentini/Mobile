@@ -1,18 +1,22 @@
 package com.example.ala_dhawki;
 
+import static com.example.ala_dhawki.Model.User.*;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-import android.widget.TextView;
 import android.widget.EditText;
 
+import com.example.ala_dhawki.Model.DataConverter;
+import com.example.ala_dhawki.Model.User;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -31,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private String sFirstname;
     private String sLastname;
-    private String sPicture;
+    private Bitmap sPicture;
     private String sPhone;
     private String sEmail;
     private String sPassword;
@@ -73,10 +77,14 @@ public class SignupActivity extends AppCompatActivity {
                 sLastname = lastname.getText().toString();
                 sEmail = email.getText().toString();
                 sPassword = password.getText().toString();
-                sPicture = upload.toString();
+                sPicture = null;
                 sPhone = phone.getText().toString();
-
-
+if (firstname.getText().toString().isEmpty() || lastname.getText().toString().isEmpty()
+||  email.getText().toString().isEmpty() || password.getText().toString().isEmpty()
+||phone.getText().toString().isEmpty() ){
+Toast.makeText(SignupActivity.this , "user missing", Toast.LENGTH_SHORT).show();}
+else
+{
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putString("Firstname",sFirstname);
                 editor.putString("Lastname",sLastname);
@@ -85,15 +93,15 @@ public class SignupActivity extends AppCompatActivity {
                 editor.putString("Picture", String.valueOf(upload));
                 editor.putString("Phone",sPhone);
 
-                editor.commit();
+    boolean commit = editor.commit();
 
+    //User.setPicture(DataConverter.convertImage2ByteArray(sPicture));
 
                 Intent intent = new Intent(SignupActivity.this, SigninActivity2.class);
                 startActivity(intent);
-
                 Toast.makeText(SignupActivity.this,"User saved", Toast.LENGTH_SHORT).show();
 
-            }
+            }}
         });
 
 
@@ -141,6 +149,8 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        //upload= (ImageView) data.getExtras().get("data");
+
         Uri uri = data.getData();
         upload.setImageURI(uri);
     }

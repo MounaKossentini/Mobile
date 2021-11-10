@@ -6,6 +6,101 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="610dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.26">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="match_parent"
+                android:layout_height="458dp"
+                android:layout_marginTop="-70dp"
+                app:srcCompat="@drawable/ff" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-160dp"
+                android:text="Girls Stickers"
+                android:textColor="#86DBD4"
+                android:textSize="14sp"
+                tools:layout_marginLeft="20dp"
+                tools:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="More than 50 stickers for girls"
+                android:textSize="14sp"
+                tools:layout_marginLeft="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="408dp"
+                android:layout_height="458dp"
+                android:layout_marginTop="-70dp"
+                app:srcCompat="@drawable/plan_de_travail__24" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-160dp"
+                android:text="Girls Stickers"
+                android:textColor="#86DBD4"
+                android:textSize="14sp"
+                tools:layout_marginLeft="20dp"
+                tools:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="More than 50 stickers for girls"
+                android:textSize="14sp"
+                tools:layout_marginLeft="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="458dp"
+                android:layout_marginTop="-70dp"
+                app:srcCompat="@drawable/ff" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-160dp"
+                android:text="Girls Stickers"
+                android:textColor="#86DBD4"
+                android:textSize="14sp"
+                tools:layout_marginLeft="20dp"
+                tools:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="More than 50 stickers for girls"
+                android:textSize="14sp"
+                tools:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="417dp"
@@ -46,18 +141,6 @@
         app:srcCompat="@drawable/plan_de_travail__19" />
 
     <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="408dp"
-        android:layout_height="458dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ff" />
-
-    <ImageView
         android:id="@+id/imageView"
         android:layout_width="27dp"
         android:layout_height="20dp"
@@ -67,75 +150,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/filter" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Girls Stickers"
-        android:textColor="#86DBD4"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379"
-        tools:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="More than 50 stickers for girls"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="408dp"
-        android:layout_height="458dp"
-        android:scaleType="fitEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575"
-        app:srcCompat="@drawable/plan_de_travail__24" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bare Bears "
-        android:textColor="#86DBD4"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752"
-        tools:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="More than 50 stickers for cute bears"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

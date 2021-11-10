@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -62,6 +63,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.MyViewHolder> {
         ImageView picture;
         TextView name;
         TextView price;
+        Button detail;
        // ImageView favoris;
 
         public MyViewHolder(@NonNull View itemView) {
