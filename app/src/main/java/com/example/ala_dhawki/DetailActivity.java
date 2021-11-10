@@ -4,23 +4,73 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.ala_dhawki.Database.AppDatabase;
+import com.example.ala_dhawki.Model.Favoris;
+import com.example.ala_dhawki.Model.Product;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class DetailActivity extends AppCompatActivity {
+import java.io.ByteArrayOutputStream;
+import java.util.List;
 
+public class DetailActivity extends AppCompatActivity {
+    private List<Favoris> favorises ;
     private ImageView stickerview;
+    private  AppDatabase databasa;
+    private ImageView favoris;
+    private ImageView test;
+    private ImageView picture;
+    private TextView price;
+    private TextView description;
+    private TextView name;
+    private Favoris f;
+
+
     BottomNavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail);
 
+        picture = findViewById(R.id.picture);
+        name = findViewById(R.id.name);
+        price = findViewById(R.id.price);
+        description = findViewById(R.id.description);
+
+
+
         stickerview = (ImageView) findViewById(R.id.imageView19);
+        favoris = (ImageView) findViewById(R.id.imageView13);
+        databasa =AppDatabase.getAppDatabase(this);
+        favoris.setOnClickListener(view -> {
+
+            Bitmap  image=((BitmapDrawable)picture.getDrawable()).getBitmap();
+
+
+
+
+
+            int id = Resources.getSystem().getIdentifier("plan_de_travail__38", "drawable", "Android");
+f= new Favoris(price.getText().toString(),R.drawable.plan_de_travail__31,description.getText().toString(),name.getText().toString());
+databasa.FavorisInterface().addFavoris(f);
+
+
+
+            Toast.makeText(DetailActivity.this,"favoris saved", Toast.LENGTH_SHORT).show();
+        });
+
+
 
         stickerview.setOnClickListener(new View.OnClickListener() {
             @Override

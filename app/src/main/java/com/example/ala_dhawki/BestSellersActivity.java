@@ -47,6 +47,11 @@ public class BestSellersActivity extends AppCompatActivity {
         RecyclerView =  findViewById(R.id.RecycleView);
         RecyclerView.setLayoutManager(new GridLayoutManager(this,2));
         RecyclerView.setAdapter(new Myadapter(this, p));
+
+
+
+
+
         stickerview = (ImageView) findViewById(R.id.imageView9);
         stickerview2 = (ImageView) findViewById(R.id.imageView5);
 

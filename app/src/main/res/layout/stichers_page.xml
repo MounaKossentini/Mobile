@@ -34,7 +34,7 @@
         tools:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/picture"
         android:layout_width="33dp"
         android:layout_height="26dp"
         app:layout_constraintBottom_toBottomOf="parent"

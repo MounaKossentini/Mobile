@@ -20,7 +20,7 @@ public class StickerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stichers_page);
-        stickerview = (ImageView) findViewById(R.id.imageView21);
+        stickerview = (ImageView) findViewById(R.id.picture);
 
         stickerview.setOnClickListener(new View.OnClickListener() {
             @Override

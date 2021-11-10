@@ -1,8 +1,6 @@
 package com.example.ala_dhawki;
 
 import android.content.Context;
-import android.content.Intent;
-import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,70 +8,57 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.ala_dhawki.Model.Favoris;
 import com.example.ala_dhawki.Model.Product;
 
 import java.util.List;
 
-public class Myadapter extends RecyclerView.Adapter<Myadapter.MyViewHolder> {
-    private List<Product> products;
+public class Myadapter2 extends RecyclerView.Adapter<Myadapter2.MyViewHolder>  {
+    private List<Favoris> favorises;
     private Context myContext;
 
-    public Myadapter (Context myContext, List<Product> products){
+    Myadapter2(Context myContext, List<Favoris> favorises){
         this.myContext= myContext;
-        this.products= products;
+        this.favorises= favorises;
     }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View myItemView = LayoutInflater
                 .from(myContext)
-                .inflate(R.layout.prototype,parent,false);
-        return new MyViewHolder(myItemView);
+                .inflate(R.layout.fa,parent,false);
+        return new Myadapter2.MyViewHolder(myItemView);
     }
-
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Product p = products.get(position);
+        Favoris p = favorises.get(position);
+
         holder.name.setText(p.getName());
         holder.price.setText(p.getPrice());
         holder.picture.setBackgroundResource(p.getPicture());
-       /* holder.favoris.setOnClickListener(view -> {
-            Intent intent = new Intent(myContext, FaActivity.class);
-
-            intent.putExtra("name",p.getName());
-            intent.putExtra("price",p.getPrice());
-            intent.putExtra("picture",p.getPicture());
-
-
-            myContext.startActivity(intent);
-        });*/
     }
 
     @Override
     public int getItemCount() {
-        return products.size();
+        return favorises.size();
     }
+
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView picture;
         TextView name;
         TextView price;
-       // ImageView favoris;
-
         public MyViewHolder(@NonNull View itemView) {
-
             super(itemView);
             picture = itemView.findViewById(R.id.picture);
             name = itemView.findViewById(R.id.name);
             price = itemView.findViewById(R.id.price);
-           // favoris = itemView.findViewById(R.id.favoris);
+
 
         }
     }
-
-
 }
