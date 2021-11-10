@@ -31,6 +31,7 @@
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/account.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/circlebtn.xml" value="0.18055555555555555" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/favoris.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/home.xml" value="0.15648148148148147" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/item.xml" value="0.264" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/drawable/round.xml" value="0.1" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/activity_favoris.xml" value="0.2203125" />
@@ -46,6 +47,7 @@
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/order.xml" value="0.2" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/orderf.xml" value="0.264" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/profile.xml" value="0.2" />
+        <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/prototype.xml" value="0.23007246376811594" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/signin.xml" value="0.264" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/signup.xml" value="0.264" />
         <entry key="..\:/Users/pc/Documents/GitHub/Mobile/app/src/main/res/layout/stichers_page.xml" value="0.1766304347826087" />

@@ -40,5 +40,4 @@ dependencies {
     annotationProcessor 'androidx.room:room-compiler:2.2.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
     implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
-
 }
