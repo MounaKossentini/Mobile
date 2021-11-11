@@ -24,8 +24,8 @@ public class User {
     @ColumnInfo(name = "password")
     private String password;
 
-    @ColumnInfo(name = "picture", typeAffinity = ColumnInfo.BLOB)
-    private byte[] picture;
+    @ColumnInfo(name = "picture")
+    private String picture;
 
     @ColumnInfo(name = "telephone")
     private int telephone;
@@ -71,11 +71,11 @@ public class User {
         this.password = password;
     }
 
-    public byte[] getPicture() {
+    public String getPicture() {
         return picture;
     }
 
-    public  void setPicture(byte[] picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 
@@ -88,7 +88,7 @@ public class User {
     }
 
 
-    public User(String firstname, String lastname, String email, String password, byte[] picture, int telephone) {
+    public User(String firstname, String lastname, String email, String password, String picture, int telephone) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;

@@ -9,8 +9,6 @@ public class Order {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    @ColumnInfo(name = "date")
-    private String date;
 
     @ColumnInfo(name = "name")
     private String name;
@@ -24,6 +22,19 @@ public class Order {
     @ColumnInfo(name = "payment")
     private String payment;
 
+    @ColumnInfo(name = "price")
+    private int price;
+
+    @ColumnInfo(name = "category")
+    private String category;
+
+    @ColumnInfo(name = "picture")
+    private int picture;
+
+    @ColumnInfo(name = "description")
+    private String description;
+
+
     public int getId() {
         return id;
     }
@@ -32,13 +43,6 @@ public class Order {
         this.id = id;
     }
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
 
     public String getName() {
         return name;
@@ -68,17 +72,72 @@ public class Order {
         return payment;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public int getPicture() {
+        return picture;
+    }
+
+    public void setPicture(int picture) {
+        this.picture = picture;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public void setPayment(String payment) {
         this.payment = payment;
     }
 
     public Order(){}
 
-    public Order(String date, String name, String address, int phone, String payment) {
-        this.date = date;
+    public Order( String name, String address, int phone, String payment) {
+
         this.name = name;
         this.address = address;
         this.phone = phone;
         this.payment = payment;
     }
+
+    public Order( String name, int price, int picture, String description) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.picture = picture;
+        this.description = description;
+    }
+
+    public Order(String name, String address, int phone, String payment, int price, String category, int picture, String description) {
+
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.payment = payment;
+        this.price = price;
+        this.category = category;
+        this.picture = picture;
+        this.description = description;
+    }
+
+
+
 }

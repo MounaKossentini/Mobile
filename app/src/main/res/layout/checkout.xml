@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/plan_de_travail__19" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/city"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.614" />
 
     <ImageView
-        android:id="@+id/imageView59"
+        android:id="@+id/checkout"
         android:layout_width="184dp"
         android:layout_height="48dp"
         android:scaleType="fitEnd"
@@ -91,7 +91,7 @@
         app:srcCompat="@drawable/plan_de_travail__40" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/date"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -107,7 +107,7 @@
         tools:visibility="visible" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/card"
         android:layout_width="360dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -122,7 +122,7 @@
         tools:textColor="#9A9A9A" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/phone"
         android:layout_width="360dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -137,11 +137,11 @@
         tools:textColor="#9A9A9A" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/email"
         android:layout_width="360dp"
         android:layout_height="45dp"
         android:ems="10"
-        android:hint="Adress"
+        android:hint="Adress email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -181,7 +181,7 @@
         app:layout_constraintVertical_bias="0.614" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/code"
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:ems="10"

@@ -30,7 +30,7 @@ public class StickerActivity extends AppCompatActivity {
             }
         });
 
-        detail = (ImageView) findViewById(R.id.imageView22);
+        detail = (ImageView) findViewById(R.id.imageView16);
 
         detail.setOnClickListener(new View.OnClickListener() {
             @Override

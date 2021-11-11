@@ -106,6 +106,12 @@ public class Favoris {
         this.name = name;
     }
 
+    public Favoris(String price ,String name) {
+
+        this.price = price;
+        this.name = name;
+    }
+
     public Favoris( String price, int picture, String description, String name) {
 
         this.price = price;

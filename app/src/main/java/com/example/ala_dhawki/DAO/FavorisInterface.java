@@ -1,11 +1,13 @@
 package com.example.ala_dhawki.DAO;
 
+import android.content.Intent;
+
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
 import com.example.ala_dhawki.Model.Favoris;
-import com.example.ala_dhawki.Model.User;
 
 import java.util.List;
 
@@ -20,4 +22,10 @@ public interface FavorisInterface {
 
     @Query("SELECT * FROM favoris WHERE id = :id")
     Favoris getFavorisByID(int id);
+
+    @Delete
+    void deleteFavoris(Favoris f);
+
+
+
 }

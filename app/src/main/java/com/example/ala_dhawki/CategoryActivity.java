@@ -24,7 +24,7 @@ public class CategoryActivity extends AppCompatActivity {
         setContentView(R.layout.home_page);
 
         navigationView = findViewById(R.id.bottom_navigation);
-        navigationView.setSelectedItemId(R.id.favoris);
+     //   navigationView.setSelectedItemId(R.id.favoris);
 
         stickers = findViewById(R.id.imageView27);
 

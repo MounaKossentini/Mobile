@@ -43,37 +43,13 @@ public class FaActivity extends AppCompatActivity {
 
 
        favorises = databasa.FavorisInterface().getAllfavoris();
-      /*  favorises.add(new Favoris("30",R.drawable.plan_de_travail__38,"","Ceries"));
-        favorises.add(new Favoris("35",R.drawable.plan_de_travail__25,"",""));
-        favorises.add(new Favoris("20",R.drawable.plan_de_travail__22,"",""));
-        favorises.add(new Favoris("10",R.drawable.plan_de_travail__23,"",""));
-        favorises.add(new Favoris("20",R.drawable.plan_de_travail__22,"",""));
-        favorises.add(new Favoris("10",R.drawable.plan_de_travail__23,"",""));
 
-*/
 
         RecyclerView =  findViewById(R.id.RecycleView);
         RecyclerView.setLayoutManager(new GridLayoutManager(this,1));
         RecyclerView.setAdapter(new Myadapter2(this,favorises));
 
 
-
-
-
-
-
-
-
-
-
-/*
-       picture = findViewById(R.id.picture);
-        name = findViewById(R.id.name);
-        price = findViewById(R.id.price);
-        name.setText(getIntent().getStringExtra("name"));
-        price.setText(getIntent().getStringExtra("price"));
-        picture.setBackgroundResource(getIntent().getIntExtra("picture",0));
-*/
 
 
 
