@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailsDabdoub extends AppCompatActivity {
     private List<Favoris> favorises ;
     private List<Order> orders ;
     private ImageView stickerview;
@@ -37,7 +37,7 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.detail);
+        setContentView(R.layout.detail2);
 
         picture = findViewById(R.id.picture);
         name = findViewById(R.id.name);
@@ -54,29 +54,22 @@ public class DetailActivity extends AppCompatActivity {
         favoris = (ImageView) findViewById(R.id.favoris);
 
         databasa =AppDatabase.getAppDatabase(this);
-favorises= databasa.FavorisInterface().getAllfavoris();
+
 
         favoris.setOnClickListener(view -> {
 
-            f= new Favoris(1,price.getText().toString(),R.drawable.plan_de_travail__31,description.getText().toString(),name.getText().toString());
-
-
-
-                    //Toast.makeText(DetailActivity.this, "Exist", Toast.LENGTH_SHORT).show();
-
-
-                    databasa.FavorisInterface().addFavoris(f);
-                    Toast.makeText(DetailActivity.this, "favoris saved", Toast.LENGTH_SHORT).show();
-
-            });
+            f= new Favoris(2,price.getText().toString(),R.drawable.groupe_1940,description.getText().toString(),name.getText().toString());
+            databasa.FavorisInterface().addFavoris(f);
+            Toast.makeText(DetailsDabdoub.this,"favoris saved", Toast.LENGTH_SHORT).show();
+        });
 
 
 
         order.setOnClickListener(view -> {
 
-            databasa.OrderInterface().addOrder( new Order(name.getText().toString(),Integer.parseInt(price.getText().toString()),R.drawable.plan_de_travail__31,description.getText().toString()));
+            databasa.OrderInterface().addOrder( new Order(name.getText().toString(),Integer.parseInt(price.getText().toString()),R.drawable.groupe_1940,description.getText().toString()));
             /*orders.add(new  Order(1,"",10,R.drawable.plan_de_travail__31,""));*/
-            Toast.makeText(DetailActivity.this,"product saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DetailsDabdoub.this,"product saved", Toast.LENGTH_SHORT).show();
         });
 
 
@@ -94,23 +87,23 @@ favorises= databasa.FavorisInterface().getAllfavoris();
                 //Fragment fragment = null;
                 switch (item.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(DetailActivity.this, BestSellersActivity.class));
+                        startActivity(new Intent(DetailsDabdoub.this, BestSellersActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.favoris:
                         //fragment = new HomeActivity();
-                        startActivity(new Intent(DetailActivity.this, FaActivity.class));
+                        startActivity(new Intent(DetailsDabdoub.this, FaActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
 
                     case R.id.order:
-                        startActivity(new Intent(DetailActivity.this, OrderActivity.class));
+                        startActivity(new Intent(DetailsDabdoub.this, OrderActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 
                     case R.id.profile:
-                        startActivity(new Intent(DetailActivity.this, ProfileActivity.class));
+                        startActivity(new Intent(DetailsDabdoub.this, ProfileActivity.class));
                         overridePendingTransition(0,0);
                         return true;
 

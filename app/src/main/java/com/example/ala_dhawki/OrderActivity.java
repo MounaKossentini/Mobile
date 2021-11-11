@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class OrderActivity extends AppCompatActivity {
     private TextView totale;
     private List<Order> orders= new ArrayList<>();
     private ImageView checkout;
+    private SwipeRefreshLayout refresh;
 
 
 
@@ -48,6 +50,19 @@ public class OrderActivity extends AppCompatActivity {
         RecyclerView =  findViewById(R.id.RecyclerView);
         RecyclerView.setLayoutManager(new GridLayoutManager(this,1));
         RecyclerView.setAdapter(new Myadapter3(this,orders));
+
+        refresh= findViewById(R.id.refresh);
+        refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                Intent intent = new Intent(OrderActivity.this, OrderActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0,0);
+                finish();
+                overridePendingTransition(0,0);
+                refresh.setRefreshing(false);
+            }
+        });
 
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override

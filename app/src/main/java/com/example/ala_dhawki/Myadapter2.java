@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.ala_dhawki.Database.AppDatabase;
 import com.example.ala_dhawki.Model.Favoris;
@@ -22,7 +23,6 @@ public class Myadapter2 extends RecyclerView.Adapter<Myadapter2.MyViewHolder>  {
     private List<Favoris> favorises;
     private Context myContext;
     private AppDatabase databasa;
-
 
 
     Myadapter2(Context myContext, List<Favoris> favorises){
@@ -45,10 +45,10 @@ public class Myadapter2 extends RecyclerView.Adapter<Myadapter2.MyViewHolder>  {
         databasa =AppDatabase.getAppDatabase(myContext);
         holder.name.setText(p.getName());
         holder.price.setText(p.getPrice());
-        holder.picture.setBackgroundResource(R.drawable.plan_de_travail__31);
+        holder.picture.setBackgroundResource(p.getPicture());
 
          holder.details.setOnClickListener(view -> {
-            Intent intent = new Intent(myContext, DetailActivity.class);
+            Intent intent = new Intent(myContext, ExtraDetail.class);
 
             intent.putExtra("name",p.getName());
             intent.putExtra("price",p.getPrice());
@@ -72,6 +72,7 @@ public class Myadapter2 extends RecyclerView.Adapter<Myadapter2.MyViewHolder>  {
         TextView price;
         ImageView details;
         ImageView delete;
+        //SwipeRefreshLayout refresh;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -80,7 +81,7 @@ public class Myadapter2 extends RecyclerView.Adapter<Myadapter2.MyViewHolder>  {
             price = itemView.findViewById(R.id.price);
             details = itemView.findViewById(R.id.details);
             delete = itemView.findViewById(R.id.delete);
-
+            //refresh= itemView.findViewById(R.id.refresh);
 delete.setOnClickListener(this);
 
         }
@@ -95,6 +96,14 @@ databasa.FavorisInterface().deleteFavoris(f);
 
 Toast.makeText(myContext,"Favoris deleted", Toast.LENGTH_SHORT).show();
 myContext.getApplicationContext();
+        /*refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                //databasa.FavorisInterface().getAllfavoris();
+                myContext.getApplicationContext();
+                 refresh.setRefreshing(false);
+            }
+        });*/
         }
     }
 }

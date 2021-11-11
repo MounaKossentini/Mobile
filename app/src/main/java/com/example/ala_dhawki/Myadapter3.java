@@ -42,7 +42,7 @@ public class Myadapter3 extends RecyclerView.Adapter<Myadapter3.MyViewHolder> {
         databasa =AppDatabase.getAppDatabase(myContext);
         holder.name.setText(p.getName());
         holder.price.setText(String.valueOf(p.getPrice()));
-        holder.picture.setBackgroundResource(R.drawable.plan_de_travail__31);
+        holder.picture.setBackgroundResource(p.getPicture());
     }
 
     @Override

@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class StickerActivity extends AppCompatActivity {
 
     private ImageView stickerview;
+    private ImageView dabdoub;
     BottomNavigationView navigationView;
     private ImageView detail;
     @Override
@@ -31,7 +32,14 @@ public class StickerActivity extends AppCompatActivity {
         });
 
         detail = (ImageView) findViewById(R.id.imageView16);
-
+        dabdoub = (ImageView) findViewById(R.id.imageView22);
+        dabdoub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StickerActivity.this, DetailsDabdoub.class);
+                startActivity(intent);
+            }
+        });
         detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ALA_Dhawki">
         <activity
+            android:name=".DetailsDabdoub"
+            android:exported="true" />
+        <activity
+            android:name=".ExtraDetail"
+            android:exported="true" />
+        <activity
             android:name=".Model.DetailActivity2"
             android:exported="true" />
         <activity

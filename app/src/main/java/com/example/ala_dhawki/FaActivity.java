@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.media.Image;
@@ -25,7 +26,7 @@ public class FaActivity extends AppCompatActivity {
     BottomNavigationView navigationView;
     private RecyclerView RecyclerView;
     private List<Favoris> favorises= new ArrayList<>();
-
+    private SwipeRefreshLayout refresh;
 
     private ImageView picture;
     private TextView name;
@@ -48,9 +49,18 @@ public class FaActivity extends AppCompatActivity {
         RecyclerView =  findViewById(R.id.RecycleView);
         RecyclerView.setLayoutManager(new GridLayoutManager(this,1));
         RecyclerView.setAdapter(new Myadapter2(this,favorises));
-
-
-
+        refresh= findViewById(R.id.refresh);
+        refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                Intent intent = new Intent(FaActivity.this, FaActivity.class);
+                startActivity(intent);
+                overridePendingTransition(0,0);
+                finish();
+                overridePendingTransition(0,0);
+                refresh.setRefreshing(false);
+            }
+        });
 
 
 
@@ -88,6 +98,10 @@ public class FaActivity extends AppCompatActivity {
 
                 return true;
             }
+
         });
+
     }
+
+
 }

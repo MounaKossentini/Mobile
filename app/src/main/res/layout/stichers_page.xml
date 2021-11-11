@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay">
 
     <ScrollView
-        android:layout_width="395dp"
-        android:layout_height="610dp"
+        android:layout_width="397dp"
+        android:layout_height="740dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +34,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-160dp"
-                android:text="Girls Stickers"
+                android:text="Cactus Stickers"
                 android:textColor="#86DBD4"
                 android:textSize="14sp"
                 tools:layout_marginLeft="20dp"
@@ -58,7 +60,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-160dp"
-                android:text="Girls Stickers"
+                android:text="3 Bears Stickers"
                 android:textColor="#86DBD4"
                 android:textSize="14sp"
                 tools:layout_marginLeft="20dp"
@@ -77,14 +79,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="458dp"
                 android:layout_marginTop="-70dp"
-                app:srcCompat="@drawable/ff" />
+                app:srcCompat="@drawable/stickers" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-160dp"
-                android:text="Girls Stickers"
+                android:text="Flower Stickers"
                 android:textColor="#86DBD4"
                 android:textSize="14sp"
                 tools:layout_marginLeft="20dp"
@@ -119,6 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="All stickers"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,17 +142,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032"
         app:srcCompat="@drawable/plan_de_travail__19" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="27dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/filter" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
